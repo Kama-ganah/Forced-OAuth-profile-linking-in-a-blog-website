@@ -1,7 +1,8 @@
 # Overview
-As a penetration tester, I evaluated the application’s OAuth account linking functionality to determine whether it was vulnerable to cross-site request forgery. During testing, I identified a forced OAuth profile linking flaw caused by the absence of CSRF protections in the OAuth flow. By capturing and reusing a valid authorization code, I was able to trick a privileged user into linking my social media account to their profile. This allowed me to authenticate as the admin and perform privileged actions, including deleting user accounts. This project demonstrates how insecure OAuth linking implementations can lead to full account takeover.
 
-# Steps Undertaken
+I evaluated the application’s OAuth account linking functionality to determine whether it was vulnerable to cross-site request forgery. During testing, I identified a forced OAuth profile linking flaw caused by the absence of CSRF protections in the OAuth flow. By capturing and reusing a valid authorization code, I was able to trick a privileged user into linking my social media account to their profile. This allowed me to authenticate as the admin and perform privileged actions, including deleting user accounts. This project demonstrates how insecure OAuth linking implementations can lead to full account takeover.
+
+# Methodology
 
 Step 1: Linked a personal social media account to a low-privilege user account and intercepted the OAuth flow.
 
